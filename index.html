@@ -14,7 +14,7 @@
 
 body{
     background:#0b0d12;
-    color:#ffffff;
+    color:#fff;
     font-family:Inter, Arial, sans-serif;
     min-height:100vh;
     display:flex;
@@ -42,6 +42,7 @@ body{
     border:1px solid rgba(217,185,120,.25);
     margin-bottom:24px;
     font-size:14px;
+    font-weight:600;
 }
 
 h1{
@@ -56,9 +57,44 @@ p{
 }
 
 .footer{
-    margin-top:30px;
+    margin-top:35px;
+}
+
+.footer p{
     color:#80848f;
-    font-size:.9rem;
+    font-size:.95rem;
+}
+
+.links{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    min-width:170px;
+    padding:16px 24px;
+    border-radius:16px;
+    text-decoration:none;
+    background:linear-gradient(135deg,#d9b978,#f1d89e);
+    color:#111;
+    font-size:1rem;
+    font-weight:700;
+    transition:.3s;
+    box-shadow:0 10px 30px rgba(217,185,120,.25);
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 40px rgba(217,185,120,.4);
+}
+
+.subtitle{
+    margin-bottom:20px;
+    color:#9ca3af;
 }
 </style>
 </head>
@@ -66,7 +102,7 @@ p{
 <body>
 
 <div class="container">
-    
+
     <div class="status">
         SISTEMA TEMPORARIAMENTE INDISPONÍVEL
     </div>
@@ -81,15 +117,32 @@ p{
     <br>
 
     <p>
-        Durante este período, o acesso ao sistema encontra-se temporariamente
-        indisponível.
+        Durante este período, o acesso ao sistema encontra-se temporariamente indisponível.
     </p>
 
     <div class="footer">
-        Agradecemos sua compreensão.<br>
-        Retornaremos em breve.
-       >>> link 1>>> https://mesaserana.manus.space/
-       >>> link 2>>> https://cod.manus.space
+
+        <p>
+            Agradecemos sua compreensão.<br>
+            Retornaremos em breve.
+        </p>
+
+        <div class="links">
+
+            <a href="https://mesaserana.manus.space/"
+               target="_blank"
+               class="btn">
+               🔗 LINK 1
+            </a>
+
+            <a href="https://cod.manus.space"
+               target="_blank"
+               class="btn">
+               🔗 LINK 2
+            </a>
+
+        </div>
+
     </div>
 
 </div>
